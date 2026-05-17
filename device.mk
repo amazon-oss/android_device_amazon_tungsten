@@ -6,6 +6,10 @@
 # Inherit from the common tree
 $(call inherit-product, device/amazon/mt8169-common/mt8169.mk)
 
+# Display
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1200
+
 # Kernel Modules
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/kernel/modules.load.recovery:$(TARGET_COPY_OUT_RECOVERY)/root/lib/modules/modules.load.recovery

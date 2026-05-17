@@ -8,6 +8,9 @@ DEVICE_PATH := device/amazon/tungsten
 # Inherit from the common tree
 include device/amazon/mt8169-common/BoardConfigCommon.mk
 
+# Display
+TARGET_SCREEN_DENSITY := 240
+
 # Kernel Modules
 RECOVERY_KERNEL_MODULES += \
     focal_hid.ko \
