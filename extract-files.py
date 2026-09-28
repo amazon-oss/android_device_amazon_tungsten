@@ -33,6 +33,8 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'vendor/lib/libMtkOmxVenc.so': blob_fixup()
         .replace_needed('libui.so', 'libui-v30.so'),
+    'vendor/lib/libwvhidl.so': blob_fixup()
+        .add_needed('libcrypto_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
