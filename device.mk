@@ -6,6 +6,10 @@
 # Inherit from the common tree
 $(call inherit-product, device/amazon/mt8169-common/mt8169.mk)
 
+# Kernel Modules
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/kernel/modules.load.recovery:$(TARGET_COPY_OUT_RECOVERY)/root/lib/modules/modules.load.recovery
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
