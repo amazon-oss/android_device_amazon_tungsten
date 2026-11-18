@@ -10,6 +10,10 @@ $(call inherit-product, device/amazon/mt8169-common/mt8169.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/kernel/modules.load.recovery:$(TARGET_COPY_OUT_RECOVERY)/root/lib/modules/modules.load.recovery
 
+# Recovery
+PRODUCT_PACKAGES += \
+    init.recovery.tungsten.rc
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 

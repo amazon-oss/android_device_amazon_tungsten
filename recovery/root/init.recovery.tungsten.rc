@@ -1,0 +1,12 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on early-boot
+    insmod /lib/modules/stylus_battery_algo.ko
+    insmod /lib/modules/i2c-hid.ko
+    insmod /lib/modules/focal_hid.ko
+    insmod /lib/modules/i2c-hid-ilitek.ko
+    insmod /lib/modules/i2c-hid-nt36523n.ko
+    insmod /lib/modules/i2c-hid-of.ko

@@ -8,6 +8,15 @@ DEVICE_PATH := device/amazon/tungsten
 # Inherit from the common tree
 include device/amazon/mt8169-common/BoardConfigCommon.mk
 
+# Kernel Modules
+RECOVERY_KERNEL_MODULES += \
+    focal_hid.ko \
+    i2c-hid-ilitek.ko \
+    i2c-hid-nt36523n.ko \
+    i2c-hid-of.ko \
+    i2c-hid.ko \
+    stylus_battery_algo.ko
+
 # Partitions
 BOARD_SUPER_PARTITION_SIZE := 4078960640
 
