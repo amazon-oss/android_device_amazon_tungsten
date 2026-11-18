@@ -8,5 +8,11 @@ DEVICE_PATH := device/amazon/tungsten
 # Inherit from the common tree
 include device/amazon/mt8169-common/BoardConfigCommon.mk
 
+# Partitions
+BOARD_SUPER_PARTITION_SIZE := 4078960640
+
+# Partitions (Dynamic)
+BOARD_MAIN_SIZE := 4076863488
+
 # Inherit the proprietary files
 include vendor/amazon/tungsten/BoardConfigVendor.mk
