@@ -47,13 +47,16 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libui.so', 'libui-v30.so'),
     'vendor/lib/libwvhidl.so': blob_fixup()
         .add_needed('libcrypto_shim.so'),
+    'vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so': blob_fixup()
+        .replace_needed('libutils.so', 'libutils-v32.so'),
     'vendor/lib64/libcam.halisp.so': blob_fixup()
         .sig_replace('00 20 80 52 37 20 00 94 fc 03 00 aa', '00 a6 81 52'),
     'vendor/lib64/libcam.isptuning.so': blob_fixup()
         .sig_replace('00 20 80 52 d6 06 02 94 fc 03 00 aa', '00 a6 81 52'),
     'vendor/lib64/libmtkcam_device3_app.so': blob_fixup()
         .remove_needed('android.frameworks.displayservice@1.0.so')
-        .remove_needed('android.hardware.graphics.common-V1-ndk_platform.so'),
+        .remove_needed('android.hardware.graphics.common-V1-ndk_platform.so')
+        .replace_needed('libutils.so', 'libutils-v32.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
