@@ -11,6 +11,9 @@ include device/amazon/mt8169-common/BoardConfigCommon.mk
 # Display
 TARGET_SCREEN_DENSITY := 240
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
 # Kernel Modules
 RECOVERY_KERNEL_MODULES += \
     focal_hid.ko \
