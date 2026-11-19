@@ -1,5 +1,67 @@
 # Unpinned blobs from Amazon/tungsten/tungsten:11/RS8338.3344N/0030132736000:user/amz-p,release-keys
 
+# Audio
+vendor/lib/hw/audio.primary.mt8169.so
+vendor/lib/hw/fireos.hardware.audio@6.0-impl.so
+vendor/lib/hw/fireos.hardware.audiosignalprocessor@1.0-impl.so
+vendor/lib/hw/fireos.hardware.audiosignalprocessor@1.1-impl.so
+vendor/lib/libasp.so
+vendor/lib/libaudio_param_parser-vnd.so
+vendor/lib/libaudiocompensationfilter_vendor.so
+vendor/lib/libaudiocomponentengine_vendor.so
+vendor/lib/libaudiocustparam_vendor.so
+vendor/lib/libaudioprimarydevicehalifclient.so
+vendor/lib/libedgeflow_core.so
+vendor/lib/libtensorflowlite_c.so:vendor/lib/libtensorflowlite_c-v30.so;FIX_SONAME
+
+# Audio (Configs)
+vendor/etc/audio-algorithms/AFE.cfg
+vendor/etc/audio-algorithms/AFE_HardwareDef.cfg
+vendor/etc/audio-algorithms/ALEXDriverCorrectionConfigChan1.cfg
+vendor/etc/audio-algorithms/ALEXDriverCorrectionConfigChan2.cfg
+vendor/etc/audio-algorithms/EdgeflowModelConfig.json
+vendor/etc/audio-algorithms/asp.cfg
+vendor/etc/audio-algorithms/coefs_FilterBank_640.cfg
+vendor/etc/audio-algorithms/coefs_FilterBank_Analysis_512.cfg
+vendor/etc/audio-algorithms/coefs_FilterBank_Synthesis_512.cfg
+vendor/etc/audio-algorithms/mod_ALEX_Driver_Correction.cfg
+vendor/etc/audio-algorithms/mod_ASR_Output_Gain.cfg
+vendor/etc/audio-algorithms/mod_Downsampler_IIR_DnnOff.cfg
+vendor/etc/audio-algorithms/mod_FilterBank.cfg
+vendor/etc/audio-algorithms/mod_Thermal_MBL.cfg
+vendor/etc/audio-algorithms/mod_VOIP_DNNRES.cfg
+vendor/etc/audio-algorithms/mod_VOIP_DNNSE.cfg
+vendor/etc/audio-algorithms/mod_VOIP_FrequencyMaskingLiteRES.cfg
+vendor/etc/audio-algorithms/mod_VOIP_MicPreProcess.cfg
+vendor/etc/audio-algorithms/mod_VOIP_MicPreProcess_dnnres.cfg
+vendor/etc/audio-algorithms/mod_VOIP_RecursiveMagnitudeEstimationNR.cfg
+vendor/etc/audio-algorithms/mod_VOIP_RxFullbandAGC.cfg
+vendor/etc/audio-algorithms/mod_VOIP_RxFullbandAGC_DnnOff.cfg
+vendor/etc/audio-algorithms/mod_VOIP_RxParametricEQ.cfg
+vendor/etc/audio-algorithms/mod_VOIP_RxParametricEQ_DnnOff.cfg
+vendor/etc/audio-algorithms/mod_VOIP_Rx_Resampler_Coeffs_DnnOff.cfg
+vendor/etc/audio-algorithms/mod_VOIP_STFTFilterbank.cfg
+vendor/etc/audio-algorithms/mod_VOIP_TxAGC.cfg
+vendor/etc/audio-algorithms/mod_VOIP_TxAGC_dnnres.cfg
+vendor/etc/audio-algorithms/mod_VOIP_TxParametricEQ_DnnOff.cfg
+vendor/etc/audio-algorithms/mod_VOIP_VAEC.cfg
+vendor/etc/audio-algorithms/mod_VOIP_VAEC_dnnres.cfg
+vendor/etc/audio-algorithms/mod_Voice_Activity_Detector.cfg
+vendor/etc/audio-algorithms/path_ASR.cfg
+vendor/etc/audio-algorithms/path_Playback.cfg
+vendor/etc/audio-algorithms/path_playbackvoice.cfg
+vendor/etc/audio-algorithms/path_playbackvoice_DnnOff.cfg
+vendor/etc/audio-algorithms/path_voice.cfg
+vendor/etc/audio-algorithms/path_voice_dnnres.cfg
+vendor/etc/audio-algorithms/se.tflite
+vendor/etc/audio_device.xml
+vendor/etc/audio_param/AudioParamOptions.xml
+vendor/etc/audio_param/RecordVol_AudioParam.xml
+vendor/etc/audio_param/VoIPVol_AudioParam.xml
+vendor/etc/audio_param/Volume_AudioParam.xml
+vendor/etc/audio_policy_volumes.xml
+vendor/etc/default_volume_tables.xml
+
 # Display
 vendor/lib/libaal_mtk.so
 vendor/lib/libdpframework.so
