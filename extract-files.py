@@ -7,6 +7,10 @@
 from extract_utils.fixups_blob import (
     blob_fixups_user_type,
 )
+from extract_utils.fixups_lib import (
+    lib_fixups,
+    lib_fixups_user_type,
+)
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
@@ -21,6 +25,10 @@ namespace_imports = [
     'vendor/amazon/mt8169-common',
 ]
 
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+}
+
 blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
@@ -28,6 +36,7 @@ module = ExtractUtilsModule(
     'tungsten',
     'amazon',
     blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
 )
 
