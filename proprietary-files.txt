@@ -1,5 +1,8 @@
 # Unpinned blobs from Amazon/tungsten/tungsten:11/RS8338.3344N/0030132736000:user/amz-p,release-keys
 
+# Gatekeeper
+vendor/lib/optee_armtz/38ba0cdc-df0e-11e4-9869-233fb6ae4795.ta
+
 # TEE
 vendor/bin/tee-supplicant
 vendor/etc/init/tee-supplicant.rc
