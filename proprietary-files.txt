@@ -107,5 +107,13 @@ vendor/lib/libteec.so
 vendor/lib/optee_armtz/2bc36ea4-80bc-44d9-a63d-356f79701060.ta
 vendor/lib64/libteec.so
 
+# Touch
+vendor/firmware/focaltech_ts_hid_fw_kd.bin
+vendor/firmware/focaltech_ts_hid_fw_starry.bin
+vendor/firmware/ilitek_hid_kd_inx_fw.bin
+vendor/firmware/ilitek_hid_starry_boe_fw.bin
+vendor/firmware/ilitek_hid_tg_hsd_fw.bin
+vendor/firmware/novatek_ts_fw_hid_boe.bin
+
 # WMT
 vendor/firmware/WMT_SOC.cfg
