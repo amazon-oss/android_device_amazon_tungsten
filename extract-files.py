@@ -31,6 +31,13 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    ('vendor/lib/hw/audio.primary.mt8169.so', 'vendor/lib/hw/fireos.hardware.audio@6.0-impl.so',
+     'vendor/lib/libasp.so', 'vendor/lib/libaudioprimarydevicehalifclient.so', 'vendor/lib/libedgeflow_core.so',
+     'vendor/lib/libtensorflowlite_c-v30.so'): blob_fixup()
+        .replace_needed('android.hardware.audio.common-util.so', 'android.hardware.audio.common-util-v30.so')
+        .replace_needed('android.hardware.audio.common@6.0-util.so', 'android.hardware.audio.common@6.0-util-v30.so')
+        .replace_needed('libmedia_helper.so', 'libmedia_helper-v30.so')
+        .replace_needed('libtensorflowlite_c.so', 'libtensorflowlite_c-v30.so'),
     'vendor/lib/libMtkOmxVenc.so': blob_fixup()
         .replace_needed('libui.so', 'libui-v30.so'),
     'vendor/lib/libwvhidl.so': blob_fixup()
