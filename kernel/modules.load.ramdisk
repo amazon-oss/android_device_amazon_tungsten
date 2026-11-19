@@ -1,0 +1,9 @@
+idme.ko
+mtk-pmic-wrap.ko
+tee.ko
+optee.ko
+tee_client_api.ko
+tz_module.ko
+optee-rng.ko
+mtk-dvfsrc-regulator.ko
+mtk-sd.ko
