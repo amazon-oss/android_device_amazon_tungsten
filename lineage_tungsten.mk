@@ -22,7 +22,10 @@ PRODUCT_CHARACTERISTICS := tablet
 
 PRODUCT_GMS_CLIENTID_BASE := android-amazon
 
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.product.manufacturer=AMAZO
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="tungsten-user 11 RS8338.3339N 0030132734720 amz-p,release-keys" \
-    BuildFingerprint=Amazon/tungsten/tungsten:11/RS8338.3339N/0030132734720:user/amz-p,release-keys \
+    BuildDesc="turquoise-user 16 SL16SHIP2003 1344N amz-p,release-keys" \
+    BuildFingerprint=Amazon/turquoise/turquoise:16/SL16SHIP2003/1344N:user/amz-p,release-keys \
     DeviceProduct=tungsten

@@ -17,6 +17,10 @@ TARGET_SCREEN_WIDTH := 1200
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/kernel/modules.load.recovery:$(TARGET_COPY_OUT_RECOVERY)/root/lib/modules/modules.load.recovery
 
+# Overlay
+PRODUCT_PACKAGES += \
+    SettingsProviderOverlayTungsten
+
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.tungsten.rc
