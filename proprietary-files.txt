@@ -23,3 +23,6 @@ vendor/etc/init/tee-supplicant.rc
 vendor/lib/libteec.so
 vendor/lib/optee_armtz/2bc36ea4-80bc-44d9-a63d-356f79701060.ta
 vendor/lib64/libteec.so
+
+# WMT
+vendor/firmware/WMT_SOC.cfg
