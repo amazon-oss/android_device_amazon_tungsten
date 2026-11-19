@@ -54,6 +54,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libutils.so', 'libutils-v32.so'),
     'vendor/lib64/libcam.halisp.so': blob_fixup()
         .sig_replace('00 20 80 52 37 20 00 94 fc 03 00 aa', '00 a6 81 52'),
+    'vendor/lib64/libcam.halsensor.so': blob_fixup()
+        .add_needed('libutils_shim.so'),
     'vendor/lib64/libcam.isptuning.so': blob_fixup()
         .sig_replace('00 20 80 52 d6 06 02 94 fc 03 00 aa', '00 a6 81 52'),
     'vendor/lib64/libmtkcam_device3_app.so': blob_fixup()
