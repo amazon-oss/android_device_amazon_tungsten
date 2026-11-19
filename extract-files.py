@@ -5,6 +5,7 @@
 #
 
 from extract_utils.fixups_blob import (
+    blob_fixup,
     blob_fixups_user_type,
 )
 from extract_utils.fixups_lib import (
@@ -30,6 +31,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/lib/libMtkOmxVenc.so': blob_fixup()
+        .replace_needed('libui.so', 'libui-v30.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

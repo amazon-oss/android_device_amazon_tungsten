@@ -1,2 +1,5 @@
+# Media
+ro.vendor.amz_freq_scale=1
+
 # Recovery
 ro.minui.blacklist_input_devices=ilitek_hid-over-i2c 222A:FFF1 Stylus
