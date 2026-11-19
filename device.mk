@@ -20,7 +20,8 @@ PRODUCT_COPY_FILES += \
 # Overlay
 PRODUCT_PACKAGES += \
     FrameworksResOverlayTungsten \
-    SettingsProviderOverlayTungsten
+    SettingsProviderOverlayTungsten \
+    SystemUIOverlayTungsten
 
 # Pen
 PRODUCT_PACKAGES += \
