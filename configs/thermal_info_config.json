@@ -1,0 +1,84 @@
+{
+    "Sensors": [
+        {
+            "Name": "soc_max",
+            "Type": "CPU",
+            "Multiplier": 0.001,
+            "Monitor": true,
+            "PollingDelay": 5000,
+            "PassiveDelay": 1000,
+            "HotThreshold": [
+                "NaN",
+                "NaN",
+                "NaN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": 85.0
+        },
+        {
+            "Name": "mfg",
+            "Type": "GPU",
+            "Multiplier": 0.001,
+            "HotThreshold": [
+                "NaN",
+                "NaN",
+                "NaN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": 85.0
+        },
+        {
+            "Name": "battery",
+            "Type": "BATTERY",
+            "Multiplier": 0.001,
+            "HotThreshold": [
+                "NaN",
+                "NaN",
+                "NaN",
+                50.0,
+                55.0,
+                59.0,
+                60.0
+            ],
+            "VrThreshold": 50.0
+        },
+        {
+            "Name": "ap_ntc",
+            "Type": "SKIN",
+            "Multiplier": 0.001,
+            "Monitor": true,
+            "PollingDelay": 5000,
+            "PassiveDelay": 2000,
+            "HotThreshold": [
+                "NaN",
+                "NaN",
+                "NaN",
+                50.0,
+                70.0,
+                80.0,
+                90.0
+            ],
+            "VrThreshold": 50.0
+        }
+    ],
+    "CoolingDevices": [
+        {
+            "Name": "thermal-cpufreq-0",
+            "Type": "CPU"
+        },
+        {
+            "Name": "thermal-cpufreq-1",
+            "Type": "CPU"
+        },
+        {
+            "Name": "thermal-devfreq-0",
+            "Type": "GPU"
+        }
+    ]
+}
