@@ -21,6 +21,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     SettingsProviderOverlayTungsten
 
+# Power
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.tungsten.rc
