@@ -13,6 +13,10 @@ vendor/lib64/libpq_prot.so
 # Gatekeeper
 vendor/lib/optee_armtz/38ba0cdc-df0e-11e4-9869-233fb6ae4795.ta
 
+# NVRAM
+vendor/lib/libcustom_nvram.so
+vendor/lib64/libcustom_nvram.so
+
 # TEE
 vendor/bin/tee-supplicant
 vendor/etc/init/tee-supplicant.rc
