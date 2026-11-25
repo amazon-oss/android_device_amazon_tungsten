@@ -13,10 +13,6 @@ $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-he
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1200
 
-# Kernel Modules
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/kernel/modules.load.recovery:$(TARGET_COPY_OUT_RECOVERY)/root/lib/modules/modules.load.recovery
-
 # Overlay
 PRODUCT_PACKAGES += \
     FrameworksResOverlayTungsten \
